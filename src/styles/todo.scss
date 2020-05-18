@@ -1,0 +1,35 @@
+@import 'variables';
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem 1rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-primary;
+    }
+
+    input[type='checkbox'] {
+      margin-right: 0.5rem;
+    }
+
+    .item-done {
+      text-decoration: line-through;
+    }
+
+    div {
+      flex: 1;
+      display: flex;
+
+      span {
+        word-break: break-word;
+      }
+    }
+  }
+}
